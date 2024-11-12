@@ -78,6 +78,10 @@
   font-weight: 200;
   width: 90%;
 }
+.main .container .textbar .spiritomb {
+  aspect-ratio: 1;
+  width: 7vw;
+}
 .main .container .textbar .iconbar {
   align-items: center;
   display: flex;
@@ -147,6 +151,9 @@
   .main .container .textbar .iconbar .icon:hover {
     color: rgba(255, 255, 255, 0.8);
     transform: rotateZ(10deg);
+  }
+  .main .container .textbar .spiritomb {
+    width: 9vw;
   }
   .main .container .picture {
     height: 20%;

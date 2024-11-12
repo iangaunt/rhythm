@@ -1,4 +1,5 @@
 import BlogBack from "@/components/BlogBack";
+import Header from "@/components/Head";
 import Navbar from "@/components/Navbar";
 import Template from "@/pages/template";
 
@@ -7,6 +8,7 @@ import styles from "@/styles/article.module.css"
 export default function Reading() {
     return (
         <>
+            <Header />
             <div className={styles.bg}></div>
             <Navbar></Navbar>
             <main className={styles.main}>

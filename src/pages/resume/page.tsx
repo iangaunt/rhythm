@@ -2,10 +2,12 @@ import Navbar from "@/components/Navbar";
 
 import styles from "@/styles/resume.module.css";
 import Template from "../template";
+import Header from "@/components/Head";
 
 export default function Resume() {
     return (
         <>
+            <Header />
             <Navbar></Navbar>
             <main className={styles.main}>
                 <Template>

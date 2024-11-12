@@ -83,6 +83,11 @@ $link-dark: rgb(22 132 205);
                 width: 90%;
             }
 
+            .spiritomb {
+                aspect-ratio: 1;
+                width: 7vw;
+            }
+
             .iconbar {
                 @include flex;
                 margin: 2vw;
@@ -163,6 +168,10 @@ $link-dark: rgb(22 132 205);
                             transform: rotateZ(10deg);
                         }
                     }
+                }
+
+                .spiritomb {
+                    width: 9vw;
                 }
             }
 

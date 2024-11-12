@@ -5,10 +5,12 @@ import Spotify from "./Spotify";
 
 import { Icon } from '@iconify/react';
 import Template from "../template";
+import Header from "@/components/Head";
 
 export default function About() {
     return (
         <>
+            <Header />
             <Navbar></Navbar>
             <main className={styles.main}>
                 <Template >

@@ -5,6 +5,7 @@ import Template from "../template";
 import Article from "./Article";
 
 import { Icon } from '@iconify/react';
+import Header from "@/components/Head";
 
 const y1: string = "rgb(255 209 102)";
 const y2: string = "rgb(172 210 124)";
@@ -14,6 +15,7 @@ const g2: string = "rgb(6 214 160)";
 export default function Blog() {
     return (
         <>
+            <Header />
             <Navbar></Navbar>
             <main className={styles.main}>
                 <Template >
