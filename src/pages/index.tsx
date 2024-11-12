@@ -2,11 +2,14 @@ import Navbar from "@/components/Navbar";
 import styles from "@/styles/index.module.css"
 import Template from "./template";
 import Header from "@/components/Head";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Landing() {
 	return (
 		<>
 		    <Header />
+			<Analytics />
+			
 			<Navbar></Navbar>
 				<main className={styles.main}>
 					<Template >
