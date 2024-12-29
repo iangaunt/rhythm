@@ -1,4 +1,8 @@
-# This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
+# iangaunt/next-template
+
+This is a template for making Next.js websites. The following steps for booting the webpage from `create-next-app` are below.
+
+## This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
 ## Getting Started
 
