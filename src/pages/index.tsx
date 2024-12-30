@@ -42,6 +42,34 @@ function Tapper(props: any) {
 	);
 }
 
+function Note(props: any) {
+	// This reference gives us direct access to the THREE.Mesh object.
+	const ref = useRef();
+
+	// Subscribe this component to the render-loop and rotate the mesh every frame.
+	let curr: any = ref.current!;
+	let j: NodeJS.Timeout;
+	j = setInterval(
+		() => {
+			curr = ref.current!;
+			if (curr != undefined) clearInterval(j);
+		}, 100
+	)
+
+	useFrame((state, delta) => (curr.position.x += delta));
+
+	return (
+		<mesh
+			{...props}
+			ref={ref}
+		>
+			<boxGeometry args={[1, 1, 1]} />
+			<meshStandardMaterial color={"red"} />
+		</mesh>
+	);
+}
+
+
 function Box(props: any) {
 	// This reference gives us direct access to the THREE.Mesh object.
 	const ref = useRef();
@@ -95,6 +123,7 @@ export default function App() {
 
 				<Lane />
 				<Tapper />
+				<Note />
 			</Canvas>
 		</div>
 	);
