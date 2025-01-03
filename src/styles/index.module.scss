@@ -11,9 +11,26 @@
 
 $bg: rgb(44 56 81);
 
+
+
 .main {
     @include flex;
-    background-color: $bg;
+    background: black;
+
+    .bg {
+        background-size: cover; 
+        background-image: url("../../public/background.svg"); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 30px 30px;
+
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+    }
+
     flex-direction: column;
     height: 100vh;
     width: 100vw;
